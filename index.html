@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assine Agora - Filmes e Séries</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>StreamFlix</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Planos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Assinatura -->
+    <section class="assinar">
+        <h2>Assine Agora e Tenha Acesso a Filmes e Séries Exclusivas!</h2>
+        <p>Escolha o seu plano e comece a assistir hoje mesmo.</p>
+
+        <div class="planos">
+            <!-- Plano Básico -->
+            <div class="plano" id="plano-basico">
+                <img src="https://via.placeholder.com/300x150/3498db/ffffff?text=Plano+Básico" alt="Plano Básico">
+                <h3>Plano Básico</h3>
+                <p>R$ 19,99 / Mês</p>
+                <p>Acesso limitado a filmes e séries.</p>
+                <button onclick="assinar('Plano Básico', 19.99)">Assinar</button>
+            </div>
+
+            <!-- Plano Premium -->
+            <div class="plano" id="plano-premium">
+                <img src="https://via.placeholder.com/300x150/e74c3c/ffffff?text=Plano+Premium" alt="Plano Premium">
+                <h3>Plano Premium</h3>
+                <p>R$ 39,99 / Mês</p>
+                <p>Acesso completo a todo conteúdo.</p>
+                <button onclick="assinar('Plano Premium', 39.99)">Assinar</button>
+            </div>
+
+            <!-- Plano VIP -->
+            <div class="plano" id="plano-vip">
+                <img src="https://via.placeholder.com/300x150/2ecc71/ffffff?text=Plano+VIP" alt="Plano VIP">
+                <h3>Plano VIP</h3>
+                <p>R$ 59,99 / Mês</p>
+                <p>Acesso a conteúdos exclusivos + lançamentos.</p>
+                <button onclick="assinar('Plano VIP', 59.99)">Assinar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Assinatura -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h3>Confirmação de Assinatura</h3>
+            <p id="info-assinatura"></p>
+            <button id="confirmar" onclick="finalizarAssinatura()">Confirmar Assinatura</button>
+            <button id="fechar" onclick="fecharModal()">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 StreamFlix. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
